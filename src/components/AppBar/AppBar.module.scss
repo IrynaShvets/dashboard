@@ -1,0 +1,464 @@
+@import "../../styles/variables";
+
+.AppBar__header {
+  @media screen and (max-width: 759px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 110;
+    background-color: $background-link;
+  }
+
+  @media screen and (min-width: 760px) {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 160px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    box-shadow: $section-shadow;
+    overflow-y: auto;
+    background-color: $background-main;
+    &::-webkit-scrollbar {
+      width: 2px;
+      overflow-y: hidden;
+      background: transparent;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 204px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 15px 45px 15px;
+    box-shadow: $section-shadow;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 255px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 29px 22px 60px 22px;
+    box-shadow: $section-shadow;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 306px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 36px 28px 76px 28px;
+    box-shadow: $section-shadow;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 340px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 40px 32px 85px 32px;
+    box-shadow: $section-shadow;
+  }
+}
+
+.AppBar__headerLogoWrapper {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  text-decoration: none;
+}
+
+.AppBar__headerLogoIcon {
+  @media screen and (max-width: 759px) {
+    width: 40.09px;
+    height: 42.79px;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: 26.09px;
+    height: 28.79px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 30.09px;
+    height: 32.79px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 40.09px;
+    height: 42.79px;
+  }
+}
+
+.AppBar__headerLogoTitle {
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  color: $dark-accent-color;
+
+  @media screen and (max-width: 759px) {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 760px) {
+    margin-left: 1px;
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-left: 5px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 32px;
+  }
+}
+
+.AppBar__headerLogoText {
+  margin-left: 4px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  color: $logo-span-color;
+
+  @media screen and (min-width: 760px) {
+    margin-left: 1px;
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 4px;
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-left: 6px;
+    font-size: 12px;
+  }
+}
+
+.AppBar__headerAvatar {
+  @media screen and (max-width: 759px) {
+    display: flex;
+  }
+  @media screen and (min-width: 760px) {
+    position: relative;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 46px;
+   left: 22px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 76px;
+     left: 28px;
+  }
+  @media screen and (min-width: 1600px) {
+    left: 32px;
+  }
+}
+
+.AppBar__headerAvatarWrapper {
+  @media screen and (min-width: 760px) {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+.AppBar__headerAvatarImage {
+  @media screen and (max-width: 759px) {
+width: 45px;
+  height: 45px;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+  }
+
+    @media screen and (min-width: 1600px) {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+    
+}
+
+.AppBar__headerAvatarName {
+  @media screen and (max-width: 759px) {
+    display: none;
+  }
+  @media screen and (min-width: 760px) {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: $dark-accent-color;
+  }
+    @media screen and (min-width: 1600px) {
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.01em;
+      color: $dark-accent-color;
+    }
+}
+
+.AppBar__headerAvatarProfession {
+  @media screen and (max-width: 759px) {
+    display: none;
+  }
+  @media screen and (min-width: 760px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: $profession-color;
+  }
+    @media screen and (min-width: 1600px) {
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.01em;
+      color: $dark-accent-color;
+    }
+}
+
+.AppBar__headerAvatar:hover .AppBar__headerAvatarLogout,
+.AppBar__headerAvatar:focus .AppBar__headerAvatarLogout,
+.AppBar__headerAvatarLogout:focus-within .AppBar__headerAvatarLogout {
+  @media screen and (min-width: 760px) {
+    display: block;
+  }
+}
+
+.AppBar__headerAvatarLogout {
+  @media screen and (max-width: 759px) {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 760px) {
+    display: none;
+    width: 130px;
+    min-height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -41px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: $background-main;
+  }
+  @media screen and (min-width: 960px) {
+    width: 175px;
+    left: 0;
+    bottom: -41px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 211px;
+    left: 0;
+    bottom: -45px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 250px;
+    left: 0;
+    bottom: -48px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 276px;
+    left: 0;
+    bottom: -48px;
+  }
+}
+
+.AppBar__headerAvatarButtonLogout {
+  @media screen and (max-width: 759px) {
+    padding: 2px 4px 2px 4px;
+    border: $border-logout;
+    background: 0;
+    color: $dark-accent-color;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: 130px;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    border-radius: $link-border-radius;
+    cursor: pointer;
+    background: $background-link;
+    color: $link-active-color;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 175px;
+    padding: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 213px;
+    padding: 9px 7px 9px 9px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 250px;
+    padding: 11px 8px 11px 11px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 276px;
+    padding: 13px 9px 13px 13px;
+  }
+}
+
+.AppBar__main {
+  @media screen and (max-width: 759px) {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    left: 161px;
+    top: 30px;
+    right: 0;
+    overflow-y: auto;
+    box-shadow: $section-shadow;
+    background: $background-main;
+    &::-webkit-scrollbar {
+      width: 2px;
+      overflow-y: hidden;
+      background: transparent;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 645px;
+    width: auto;
+    height: 80vh;
+    position: absolute;
+    left: 251px;
+    top: 40px;
+    padding-bottom: 20px;
+    box-shadow: $section-shadow;
+    border-radius: $background-border-radius;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 806px;
+    width: auto;
+    height: 80vh;
+    position: absolute;
+    left: 314px;
+    top: 60px;
+    padding-bottom: 20px;
+    box-shadow: $section-shadow;
+    border-radius: $background-border-radius;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 968px;
+    height: 70vh;
+    position: absolute;
+    left: 377px;
+    top: 128px;
+    padding-bottom: 40px;
+    box-shadow: $section-shadow;
+    border-radius: $background-border-radius;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1075px;
+    width: auto;
+    height: 70vh;
+    position: absolute;
+    left: 418px;
+    top: 130px;
+    padding-bottom: 40px;
+    box-shadow: $section-shadow;
+    border-radius: $background-border-radius;
+  }
+}
+
+.AppBar__mainUsername {
+  @media screen and (max-width: 759px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: auto;
+    height: 36px;
+    position: fixed;
+    left: 161px;
+    top: 3px;
+    z-index: 5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: $dark-accent-color;
+  }
+
+  @media screen and (min-width: 960px) {
+    left: 251px;
+    top: 8px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 314px;
+    top: 15px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    left: 377px;
+    top: 41px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    left: 418px;
+    top: 50px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}

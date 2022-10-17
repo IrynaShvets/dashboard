@@ -1,0 +1,52 @@
+@import "./_variables.scss";
+
+.HomePage__welcome {
+  color: $dark-accent-color;
+  margin-top: 20px;
+
+  @media screen and (max-width: 759px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 760px) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 38px;
+  }
+}
+
+.HomePage__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.HomePage__wrapper-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.HomePage__container {
+  @media screen and (max-width: 759px) {
+    padding: 30px;
+  }
+  @media screen and (min-width: 760px) {
+    padding: 40px 60px 0 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 130px 0 130px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 110px 0 110px;
+  }
+}
+
+.HomePage__container-text {
+  font-size: 25px;
+  font-weight: 500;
+}

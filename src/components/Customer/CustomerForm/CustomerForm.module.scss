@@ -1,0 +1,46 @@
+@import "../../../styles/variables";
+
+.CustomerForm {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  padding: 20px 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0;
+  @media screen and (max-width: 759px) {
+    width: 100%;
+  }
+}
+
+.CustomerForm__label {
+  margin-bottom: 10px;
+  border: 0;
+}
+
+.CustomerForm__input {
+  width: 350px;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 40px;
+  outline: none;
+  border: 0;
+  border-radius: $filter-border-radius;
+  border: $border-nav-mobile;
+  background: $background-input;
+  font-size: 16px;
+  color: $table-title-color;
+
+  @media screen and (max-width: 759px) {
+    width: 100%;
+  }
+
+  &::placeholder {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: inherit;
+  }
+}

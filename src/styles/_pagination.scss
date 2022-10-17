@@ -1,0 +1,116 @@
+@import "./_variables.scss";
+
+.CustomerList__pagination {
+  @media screen and (min-width: 760px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 30px 0 0 0;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin: 40px 0 0 0;
+  }
+}
+
+.CustomerList__pagination-buttons {
+  @media screen and (max-width: 759px) {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 760px) {
+    display: flex;
+    gap: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    gap: 30px;
+  }
+}
+
+.CustomerList__pagination .CustomerList__pagination-text {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: $pagination-color;
+  @media screen and (max-width: 759px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 16px;
+  }
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 8px;
+  width: 24px;
+  height: 23px;
+  background: $background-pagination;
+  border: $border-pagination;
+  border-radius: $button-border-radius;
+  transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
+  @media screen and (min-width: 1200px) {
+    padding: 6px 9px;
+    width: 25px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 8px 12px;
+    width: 30px;
+    height: 29px;
+  }
+}
+
+.page.page--active,
+.page:hover {
+  background: $background-pagination-active;
+  border: $border-pagination-active;
+  border-radius: $button-border-radius;
+  color: $pagination-color-active;
+}
+
+.page.page--disabled {
+  background-color: transparent !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.CustomerList__pagination-icon {
+  fill: currentColor;
+}
+
+.CustomerList__pagination-dots {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.CustomerList__pagination-dotsSpan {
+  width: 9px;
+  height: 12px;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: $pagination-color-dots;
+}

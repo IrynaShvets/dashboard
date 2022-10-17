@@ -1,0 +1,273 @@
+@import "./_variables.scss";
+
+.Navigation--active {
+    transition: all $transition;
+
+    @media screen and (max-width: 759px) {
+        color: $background-link;
+        padding: 3px;
+        border: 1px solid $background-link;
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 760px) {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        background: $background-link;
+        border-radius: 8px;
+        color: $link-active-color;
+        width: 130px;
+        padding: 4px 2px 4px 4px;
+    }
+
+    @media screen and (min-width: 960px) {
+        width: 175px;
+        padding: 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 211px;
+        padding: 9px 7px 9px 9px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 250px;
+        padding: 11px 8px 11px 11px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 276px;
+        padding: 13px 9px 13px 13px;
+    }
+}
+
+.Navigation--inactive {
+    transition: all $transition;
+
+    @media screen and (max-width: 759px) {
+        padding: 3px;
+        border: 1px solid $accent-color;
+        display: flex;
+        color: $accent-color;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 760px) {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        color: $accent-color;
+        border-radius: 8px;
+        width: 130px;
+        padding: 4px 2px 4px 4px;
+    }
+
+    @media screen and (min-width: 960px) {
+        width: 175px;
+        padding: 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 211px;
+        padding: 9px 7px 9px 9px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 250px;
+        padding: 11px 8px 11px 11px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 276px;
+        padding: 13px 9px 13px 13px;
+    }
+}
+
+.Navigation--inactive:hover {
+    @media screen and (max-width: 759px) {
+        background: $background-link;
+        color: $link-active-color;
+    }
+
+    @media screen and (min-width: 760px) {
+        background: $background-link;
+        border-radius: 8px;
+        color: $link-active-color;
+    }
+}
+
+.Navigation__name {
+    @media screen and (max-width: 759px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 760px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        color: currentColor;
+        margin-left: 4px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-left: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 14px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+}
+
+.Navigation__name--dashboard {
+    @media screen and (min-width: 760px) {
+        margin-right: 12px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 43px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 76px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 110px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 121px;
+    }
+}
+
+.Navigation__name--product {
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 760px) {
+        margin-right: 37px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 68px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 102px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 135px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 150px;
+    }
+}
+
+.Navigation__name--customers {
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 760px) {
+        margin-right: 21px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 52px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 86px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 119px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 130px;
+    }
+}
+
+.Navigation__name--income {
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 760px) {
+        margin-right: 39px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 69px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 104px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 136px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 150px;
+    }
+}
+
+.Navigation__name--promote {
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 760px) {
+        margin-right: 34px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 64px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 98px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 131px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 144px;
+    }
+}
+
+.Navigation__name--help {
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 760px) {
+        margin-right: 53px;
+    }
+
+    @media screen and (min-width: 960px) {
+        margin-right: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 118px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 151px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 167px;
+    }
+}

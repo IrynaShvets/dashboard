@@ -1,0 +1,165 @@
+@import "../../../styles/variables";
+
+.CustomerList {
+  @media screen and (max-width: 759px) {
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 760px) {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1440px) { 
+    padding-right: 44px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-left: 38px;
+  }
+}
+
+.CustomerList__table {
+  @media screen and (max-width: 759px) {
+    margin-bottom: 30px;
+    width: inherit;
+    border-collapse: collapse;
+  }
+  @media screen and (min-width: 760px) {
+    width: calc(100% / 6);
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+
+.CustomerList__tableRowHead {
+  border-bottom: $border-bottom-table;
+  th {
+    width: calc(100% / 6);
+  }
+  @media screen and (min-width: 760px) {
+    padding-right: 67px;
+    padding-left: 38px;
+  }
+}
+
+.CustomerList__tableHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $table-title-color;
+  text-align: start;
+  padding-bottom: 14px;
+  @media screen and (max-width: 1439px) {
+    padding-bottom: 5px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.CustomerList__tableRowBody {
+  width: auto;
+  border-bottom: $border-bottom-table;
+  td {
+    @media screen and (min-width: 760px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    @media screen and (min-width: 960px) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+  }
+}
+
+.CustomerList__tableData {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $table-text-color;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.CustomerList__tableDataStatusActive {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $button-active-color;
+  padding: 4px 18px;
+  background: $background-button-active;
+  border: $border-button-active;
+  border-radius: $button-border-radius;
+  @media screen and (max-width: 759px) {
+    border: 0;
+    background: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 13px;
+    padding: 2px 8px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 6px 20px;
+  }
+}
+
+.CustomerList__tableDataStatusInactive {
+  background: $background-button-inactive;
+  border: $border-button-inactive;
+  border-radius: $button-border-radius;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $button-inactive-color;
+  padding: 4px 14px;
+  @media screen and (max-width: 759px) {
+    border: 0;
+    background: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 6px 16px;
+  }
+}

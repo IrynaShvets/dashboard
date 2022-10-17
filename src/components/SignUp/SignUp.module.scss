@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.SignUp {
+  @media screen and (max-width: 759px) {
+    padding: 30px 0 30px 0;
+  }
+
+  @media screen and (min-width: 760px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.SignUp__container {
+  @media screen and (min-width: 760px) {
+    margin-top: 15px;
+  }
+}
+
+.SignUp__link {
+  color: $accent-color;
+  font-weight: 400;
+  font-size: 14px;
+  transition: $transition;
+  &:hover {
+    color: $background-link;
+  }
+}

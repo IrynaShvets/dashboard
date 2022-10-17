@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.Title {
+  margin-bottom: 5px;
+  padding-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  color: $dark-accent-color;
+
+  @media screen and (max-width: 759px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 760px) {
+    padding-left: 25px;
+    padding-right: 53px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 30px;
+    margin-bottom: 7px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-top: 45px;
+    padding-left: 38px;
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+}

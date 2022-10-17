@@ -1,0 +1,22 @@
+@import "./_variables.scss";
+
+.activeMembers {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $active-members-color;
+  @media screen and (max-width: 759px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 760px) {
+    padding-left: 25px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-left: 38px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
